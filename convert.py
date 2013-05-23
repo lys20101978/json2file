@@ -175,7 +175,7 @@ def _decode_dict(data):
 
 
 if __name__ == '__main__':
-    f = file("data3.json")
+    f = file('testdata.json')
     data = json.load(f, object_hook=_decode_dict)
     data = data['data']
-    output(data, 'test', 'dict', 'grant')
+    output(data, 'result', 'csv', 'grant')
